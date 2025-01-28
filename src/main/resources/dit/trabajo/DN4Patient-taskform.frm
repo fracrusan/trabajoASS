@@ -1,0 +1,1 @@
+{"id":"fe54fc58-ac87-4034-b64b-f0dc2dc642f1","name":"DN4Patient-taskform.frm","model":{"taskName":"DN4Patient","processId":"Trabajo.valoracionSubjetiva","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}
