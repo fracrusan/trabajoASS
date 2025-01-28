@@ -6,12 +6,24 @@ package dit.trabajo;
 
 public class dolorNeuropatico implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public dolorNeuropatico() {
-    }
+	@org.kie.api.definition.type.Label(value = "nivel del dolor")
+	private java.lang.Integer nivel;
 
+	public dolorNeuropatico() {
+	}
 
+	public java.lang.Integer getNivel() {
+		return this.nivel;
+	}
 
+	public void setNivel(java.lang.Integer nivel) {
+		this.nivel = nivel;
+	}
+
+	public dolorNeuropatico(java.lang.Integer nivel) {
+		this.nivel = nivel;
+	}
 
 }
