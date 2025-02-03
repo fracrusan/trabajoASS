@@ -8,12 +8,16 @@ public class criteriosDNL implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Anatomia coherente con DNL")
+	@org.kie.api.definition.type.Label("Anatomia coherente con DNL")
 	private java.lang.Boolean anatomico;
-	@org.kie.api.definition.type.Label(value = "sensibilidad de la zona compatible con DNL")
+	@org.kie.api.definition.type.Label("sensibilidad de la zona compatible con DNL")
 	private java.lang.Boolean sensitivo;
-	@org.kie.api.definition.type.Label(value = "Dimensionamiento de la zona afectada (menor que A4)")
+	@org.kie.api.definition.type.Label("Dimensionamiento de la zona afectada (menor que A4)")
 	private boolean dimensionamiento;
+
+	private java.lang.Long id;
+
+	private java.lang.Integer puntuacion;
 
 	public criteriosDNL() {
 	}
@@ -42,11 +46,30 @@ public class criteriosDNL implements java.io.Serializable {
 		this.dimensionamiento = dimensionamiento;
 	}
 
+	public java.lang.Long getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
+
+	public java.lang.Integer getPuntuacion() {
+		return this.puntuacion;
+	}
+
+	public void setPuntuacion(java.lang.Integer puntuacion) {
+		this.puntuacion = puntuacion;
+	}
+
 	public criteriosDNL(java.lang.Boolean anatomico,
-			java.lang.Boolean sensitivo, boolean dimensionamiento) {
+			java.lang.Boolean sensitivo, boolean dimensionamiento,
+			java.lang.Long id, java.lang.Integer puntuacion) {
 		this.anatomico = anatomico;
 		this.sensitivo = sensitivo;
 		this.dimensionamiento = dimensionamiento;
+		this.id = id;
+		this.puntuacion = puntuacion;
 	}
 
 }
