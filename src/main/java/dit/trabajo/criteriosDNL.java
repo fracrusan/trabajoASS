@@ -45,8 +45,15 @@ public class criteriosDNL implements java.io.Serializable {
 	public void setId(java.lang.Long id) {
 		this.id = id;
 	}
+	
+	public void setPuntuacion(){
+	    this.puntuacion = 	this.anatomico.compareTo(true) +
+		                    this.sensitivo.compareTo(true) +
+		                    this.dimensionamiento.compareTo(true);
+	}
 
 	public java.lang.Integer getPuntuacion() {
+	    	    setPuntuacion();
 		return this.puntuacion;
 	}
 
@@ -70,6 +77,7 @@ public class criteriosDNL implements java.io.Serializable {
 		this.dimensionamiento = dimensionamiento;
 		this.id = id;
 		this.puntuacion = puntuacion;
+		
 	}
 
 }
