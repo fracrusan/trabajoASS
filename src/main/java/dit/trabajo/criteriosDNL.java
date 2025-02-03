@@ -13,7 +13,7 @@ public class criteriosDNL implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("sensibilidad de la zona compatible con DNL")
 	private java.lang.Boolean sensitivo;
 	@org.kie.api.definition.type.Label("Dimensionamiento de la zona afectada (menor que A4)")
-	private boolean dimensionamiento;
+	private Boolean dimensionamiento;
 
 	private java.lang.Long id;
 
@@ -38,14 +38,6 @@ public class criteriosDNL implements java.io.Serializable {
 		this.sensitivo = sensitivo;
 	}
 
-	public boolean isDimensionamiento() {
-		return this.dimensionamiento;
-	}
-
-	public void setDimensionamiento(boolean dimensionamiento) {
-		this.dimensionamiento = dimensionamiento;
-	}
-
 	public java.lang.Long getId() {
 		return this.id;
 	}
@@ -62,8 +54,16 @@ public class criteriosDNL implements java.io.Serializable {
 		this.puntuacion = puntuacion;
 	}
 
+	public java.lang.Boolean getDimensionamiento() {
+		return this.dimensionamiento;
+	}
+
+	public void setDimensionamiento(java.lang.Boolean dimensionamiento) {
+		this.dimensionamiento = dimensionamiento;
+	}
+
 	public criteriosDNL(java.lang.Boolean anatomico,
-			java.lang.Boolean sensitivo, boolean dimensionamiento,
+			java.lang.Boolean sensitivo, java.lang.Boolean dimensionamiento,
 			java.lang.Long id, java.lang.Integer puntuacion) {
 		this.anatomico = anatomico;
 		this.sensitivo = sensitivo;
