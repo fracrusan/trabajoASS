@@ -6,12 +6,47 @@ package dit.trabajo;
 
 public class criteriosDNL implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public criteriosDNL() {
-    }
+	@org.kie.api.definition.type.Label(value = "Anatomia coherente con DNL")
+	private java.lang.Boolean anatomico;
+	@org.kie.api.definition.type.Label(value = "sensibilidad de la zona compatible con DNL")
+	private java.lang.Boolean sensitivo;
+	@org.kie.api.definition.type.Label(value = "Dimensionamiento de la zona afectada (menor que A4)")
+	private boolean dimensionamiento;
 
+	public criteriosDNL() {
+	}
 
+	public java.lang.Boolean getAnatomico() {
+		return this.anatomico;
+	}
 
+	public void setAnatomico(java.lang.Boolean anatomico) {
+		this.anatomico = anatomico;
+	}
+
+	public java.lang.Boolean getSensitivo() {
+		return this.sensitivo;
+	}
+
+	public void setSensitivo(java.lang.Boolean sensitivo) {
+		this.sensitivo = sensitivo;
+	}
+
+	public boolean isDimensionamiento() {
+		return this.dimensionamiento;
+	}
+
+	public void setDimensionamiento(boolean dimensionamiento) {
+		this.dimensionamiento = dimensionamiento;
+	}
+
+	public criteriosDNL(java.lang.Boolean anatomico,
+			java.lang.Boolean sensitivo, boolean dimensionamiento) {
+		this.anatomico = anatomico;
+		this.sensitivo = sensitivo;
+		this.dimensionamiento = dimensionamiento;
+	}
 
 }
