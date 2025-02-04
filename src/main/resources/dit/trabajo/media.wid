@@ -58,7 +58,7 @@
         "patient" : new StringDataType(),
         "idEncounter" : new StringDataType(),
         "partitioner" : new StringDataType(),
-        "DNL_diagnostico" : new Boolean()
+        "rank" : new Boolean()
     ], 
     "results" : [ 
         "idEncounter" : new StringDataType()
