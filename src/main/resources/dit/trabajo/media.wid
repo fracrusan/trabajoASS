@@ -1,10 +1,17 @@
 [
   [
-    "name" : "MyTask", 
+    "name" : "PostMedia", 
     "parameters" : [ 
-        "MyFirstParam" : new StringDataType(), 
-        "MySecondParam" : new StringDataType(), 
-        "MyThirdParam" : new ObjectDataType() 
+        "encounter" : new StringDataType(), 
+        "patient" : new StringDataType(), 
+        "practitioner" : new StringDataType(),
+        "content" : [
+            "contentType": new StringDataType(),
+            "data": new StringDataType(),
+            ],
+        "type" :  new StringDataType(),
+        
+        
     ], 
     "results" : [ 
         "Result" : new ObjectDataType("java.util.Map") 
