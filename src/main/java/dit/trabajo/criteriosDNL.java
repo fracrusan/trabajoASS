@@ -19,6 +19,9 @@ public class criteriosDNL implements java.io.Serializable {
 
 	private java.lang.Integer puntuacion;
 
+	@org.kie.api.definition.type.Label(value = "indica si las patologías previas del paciente son consistentes con DNL")
+	private java.lang.Boolean patologiasPrevias;
+
 	public criteriosDNL() {
 	}
 
@@ -45,15 +48,16 @@ public class criteriosDNL implements java.io.Serializable {
 	public void setId(java.lang.Long id) {
 		this.id = id;
 	}
-	
-	public void setPuntuacion(){
-	    this.puntuacion = 	this.anatomico.compareTo(true) +
-		                    this.sensitivo.compareTo(true) +
-		                    this.dimensionamiento.compareTo(true);
+
+	public void setPuntuacion() {
+		this.puntuacion = this.anatomico.compareTo(true)
+				+ this.sensitivo.compareTo(true)
+				+ this.patologiasPrevias.compareTo(true)
+				+ this.dimensionamiento.compareTo(true);
 	}
 
 	public java.lang.Integer getPuntuacion() {
-	    	    setPuntuacion();
+		setPuntuacion();
 		return this.puntuacion;
 	}
 
@@ -69,15 +73,24 @@ public class criteriosDNL implements java.io.Serializable {
 		this.dimensionamiento = dimensionamiento;
 	}
 
+	public java.lang.Boolean getPatologiasPrevias() {
+		return this.patologiasPrevias;
+	}
+
+	public void setPatologiasPrevias(java.lang.Boolean patologiasPrevias) {
+		this.patologiasPrevias = patologiasPrevias;
+	}
+
 	public criteriosDNL(java.lang.Boolean anatomico,
 			java.lang.Boolean sensitivo, java.lang.Boolean dimensionamiento,
-			java.lang.Long id, java.lang.Integer puntuacion) {
+			java.lang.Long id, java.lang.Integer puntuacion,
+			java.lang.Boolean patologiasPrevias) {
 		this.anatomico = anatomico;
 		this.sensitivo = sensitivo;
 		this.dimensionamiento = dimensionamiento;
 		this.id = id;
 		this.puntuacion = puntuacion;
-		
+		this.patologiasPrevias = patologiasPrevias;
 	}
 
 }
