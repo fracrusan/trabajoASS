@@ -65,7 +65,7 @@
     "results" : [ 
         "idEncounter" : new StringDataType()
     ], 
-    "displayName" : "postEncounter", 
+    "displayName" : "putEncounter", 
     "icon" : "" 
   ]
 ]
