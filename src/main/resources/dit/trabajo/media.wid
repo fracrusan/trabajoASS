@@ -16,9 +16,9 @@
     "icon" : "" 
   ],
     [
-    "name" : "getEncoounter", 
+    "name" : "getAppointment", 
     "parameters" : [ 
-        "encounter" : new StringDataType()
+        "appointment" : new StringDataType()
     ], 
     "results" : [ 
         "idPractitioner" : new StringDataType(),
