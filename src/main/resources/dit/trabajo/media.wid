@@ -1,0 +1,71 @@
+[
+  [
+    "name" : "PostMedia", 
+    "parameters" : [ 
+        "encounter" : new StringDataType(), 
+        "patient" : new StringDataType(), 
+        "practitioner" : new StringDataType(),
+        "contentType": new StringDataType(),
+        "data": new StringDataType(),
+        "type" :  new StringDataType(),
+    ], 
+    "results" : [ 
+        "id" : new StringDataType() 
+    ], 
+    "displayName" : "PostMedia", 
+    "icon" : "" 
+  ],
+    [
+    "name" : "getAppointment", 
+    "parameters" : [ 
+        "appointment" : new StringDataType()
+    ], 
+    "results" : [ 
+        "idPractitioner" : new StringDataType(),
+        "idPatient" : new StringDataType()
+    ], 
+    "displayName" : "getAppointment", 
+    "icon" : "" 
+  ],
+    [
+    "name" : "CDS_DN4", 
+    "parameters" : [ 
+        "patientId" : new StringDataType(), 
+        "hook" : new StringDataType(), 
+        "DN4" : new ObjectDataType("dit.trabajo.DN4Patient")
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "CDS_DN4", 
+    "icon" : "../../../../../global/defaultwebserviceicon.png" 
+  ],
+   [
+    "name" : "postEncounter", 
+    "parameters" : [ 
+        "patient" : new StringDataType(),
+        "partitioner" : new StringDataType(),
+        "appointment" : new StringDataType()
+    ], 
+    "results" : [ 
+        "idEncounter" : new StringDataType()
+    ], 
+    "displayName" : "postEncounter", 
+    "icon" : "" 
+  ],
+  [
+    "name" : "putEncounter", 
+    "parameters" : [ 
+        "patient" : new StringDataType(),
+        "idEncounter" : new StringDataType(),
+        "partitioner" : new StringDataType(),
+        "rank" : new ObjectDataType("java.util.Boolean"),
+        "use" : new StringDataType()
+    ], 
+    "results" : [ 
+        "idEncounter" : new StringDataType()
+    ], 
+    "displayName" : "putEncounter", 
+    "icon" : "" 
+  ]
+]
