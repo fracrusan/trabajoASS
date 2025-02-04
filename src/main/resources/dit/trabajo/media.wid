@@ -43,12 +43,12 @@
      [
     "name" : "cdsHook", 
     "parameters" : [ 
-        "patient" : new StringDataType(),
-        "partitioner" : new StringDataType(),
-        "appointment" : new StringDataType()
+        "patientId" : new StringDataType(),
+        "hook" : new StringDataType(),
+        "DN4" : new StringDataType()
     ], 
     "results" : [ 
-        "idEncounter" : new StringDataType()
+        "Result" : new StringDataType()
     ], 
     "displayName" : "cdsHook", 
     "icon" : "" 
