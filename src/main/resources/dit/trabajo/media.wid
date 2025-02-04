@@ -24,7 +24,7 @@
         "idPractitioner" : new StringDataType(),
         "idPatient" : new StringDataType()
     ], 
-    "displayName" : "getEncounter", 
+    "displayName" : "getAppointment", 
     "icon" : "" 
   ],
     [
@@ -49,7 +49,21 @@
     "results" : [ 
         "idEncounter" : new StringDataType()
     ], 
-    "displayName" : "getEncounter", 
+    "displayName" : "postEncounter", 
+    "icon" : "" 
+  ],
+  [
+    "name" : "putEncounter", 
+    "parameters" : [ 
+        "patient" : new StringDataType(),
+        "idEncounter" : new StringDataType(),
+        "partitioner" : new StringDataType(),
+        "DNL_diagnostico" : new Boolean()
+    ], 
+    "results" : [ 
+        "idEncounter" : new StringDataType()
+    ], 
+    "displayName" : "postEncounter", 
     "icon" : "" 
   ]
 ]
