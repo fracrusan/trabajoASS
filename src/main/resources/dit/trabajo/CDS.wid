@@ -10,6 +10,6 @@
         "Result" : new ObjectDataType("java.util.Map") 
     ], 
     "displayName" : "CDS_DN4", 
-    "icon" : "" 
+    "icon" : "../../../../../global/defaultwebserviceicon.png" 
   ]
 ]
