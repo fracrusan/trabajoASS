@@ -4,7 +4,7 @@
     "parameters" : [ 
         "patientId" : new StringDataType(), 
         "hook" : new StringDataType(), 
-        "DN4" : new DN4Patient()
+        "DN4" : new ObjectDataType("dit.trabajo.DN4Patient")
     ], 
     "results" : [ 
         "Result" : new ObjectDataType("java.util.Map") 
