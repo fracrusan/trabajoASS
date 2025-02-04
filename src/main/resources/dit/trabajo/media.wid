@@ -45,7 +45,7 @@
     "parameters" : [ 
         "patientId" : new StringDataType(),
         "hook" : new StringDataType(),
-        "DN4" : new StringDataType()
+        "DN4" : new ObjectDataType("dit.trabajo.DN4Patient")
     ], 
     "results" : [ 
         "Result" : new StringDataType()
