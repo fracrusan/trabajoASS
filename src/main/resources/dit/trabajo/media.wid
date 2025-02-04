@@ -38,7 +38,7 @@
         "Result" : new ObjectDataType("java.util.Map") 
     ], 
     "displayName" : "CDS_DN4", 
-    "icon" : "../../../../../global/defaultwebserviceicon.png" 
+    "icon" : "" 
   ],
    [
     "name" : "postEncounter", 
