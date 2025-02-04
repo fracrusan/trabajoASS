@@ -1,10 +1,10 @@
 [
   [
-    "name" : "MyTask", 
+    "name" : "CDS_DN4", 
     "parameters" : [ 
-        "MyFirstParam" : new StringDataType(), 
-        "MySecondParam" : new StringDataType(), 
-        "MyThirdParam" : new ObjectDataType() 
+        "patientId" : new StringDataType(), 
+        "hook" : new StringDataType(), 
+        "DN4" : new DN4Patient()
     ], 
     "results" : [ 
         "Result" : new ObjectDataType("java.util.Map") 
