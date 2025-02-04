@@ -40,6 +40,19 @@
     "displayName" : "CDS_DN4", 
     "icon" : "" 
   ],
+     [
+    "name" : "cdsHook", 
+    "parameters" : [ 
+        "patient" : new StringDataType(),
+        "partitioner" : new StringDataType(),
+        "appointment" : new StringDataType()
+    ], 
+    "results" : [ 
+        "idEncounter" : new StringDataType()
+    ], 
+    "displayName" : "cdsHook", 
+    "icon" : "" 
+  ],
    [
     "name" : "postEncounter", 
     "parameters" : [ 
