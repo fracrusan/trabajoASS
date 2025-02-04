@@ -14,5 +14,17 @@
     ], 
     "displayName" : "PostMedia", 
     "icon" : "" 
+  ],
+    [
+    "name" : "getEncoounter", 
+    "parameters" : [ 
+        "encounter" : new StringDataType()
+    ], 
+    "results" : [ 
+        "idPractitioner" : new StringDataType(),
+        "idPatient" : new StringDataType()
+    ], 
+    "displayName" : "getEncounter", 
+    "icon" : "" 
   ]
 ]
