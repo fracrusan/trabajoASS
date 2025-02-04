@@ -48,7 +48,7 @@
         "DN4" : new ObjectDataType("dit.trabajo.DN4Patient")
     ], 
     "results" : [ 
-        "Result" : new StringDataType()
+        "Result" : new ObjectDataType("java.util.Boolean")
     ], 
     "displayName" : "cdsHook", 
     "icon" : "" 
