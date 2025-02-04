@@ -38,7 +38,20 @@
         "Result" : new ObjectDataType("java.util.Map") 
     ], 
     "displayName" : "CDS_DN4", 
-    "icon" : "../../../../../global/defaultwebserviceicon.png" 
+    "icon" : "" 
+  ],
+     [
+    "name" : "cdsHook", 
+    "parameters" : [ 
+        "patientId" : new StringDataType(),
+        "hook" : new StringDataType(),
+        "DN4" : new ObjectDataType("dit.trabajo.DN4Patient")
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Boolean")
+    ], 
+    "displayName" : "cdsHook", 
+    "icon" : "" 
   ],
    [
     "name" : "postEncounter", 
