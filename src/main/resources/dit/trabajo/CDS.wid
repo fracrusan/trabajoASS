@@ -9,7 +9,7 @@
     "results" : [ 
         "Result" : new ObjectDataType("java.util.Map") 
     ], 
-    "displayName" : "My Task", 
-    "icon" : "" 
+    "displayName" : "CDS_DN4", 
+    "icon" : "defaultresticon.png" 
   ]
 ]
