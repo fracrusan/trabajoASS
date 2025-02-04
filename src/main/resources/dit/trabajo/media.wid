@@ -39,5 +39,17 @@
     ], 
     "displayName" : "CDS_DN4", 
     "icon" : "../../../../../global/defaultwebserviceicon.png" 
+  ],
+   [
+    "name" : "postEncounter", 
+    "parameters" : [ 
+        "patient" : new StringDataType(),
+        "partitioner" : new StringDataType()
+    ], 
+    "results" : [ 
+        "idEncounter" : new StringDataType()
+    ], 
+    "displayName" : "getEncounter", 
+    "icon" : "" 
   ]
 ]
