@@ -5,18 +5,14 @@
         "encounter" : new StringDataType(), 
         "patient" : new StringDataType(), 
         "practitioner" : new StringDataType(),
-        "content" : [
-            "contentType": new StringDataType(),
-            "data": new StringDataType(),
-            ],
+        "contentType": new StringDataType(),
+        "data": new StringDataType(),
         "type" :  new StringDataType(),
-        
-        
     ], 
     "results" : [ 
-        "Result" : new ObjectDataType("java.util.Map") 
+        "id" : new StringDataType() 
     ], 
-    "displayName" : "My Task", 
+    "displayName" : "PostMedia", 
     "icon" : "" 
   ]
 ]
