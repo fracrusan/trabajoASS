@@ -52,5 +52,20 @@
     ], 
     "displayName" : "postEncounter", 
     "icon" : "" 
+  ],
+  [
+    "name" : "putEncounter", 
+    "parameters" : [ 
+        "patient" : new StringDataType(),
+        "idEncounter" : new StringDataType(),
+        "partitioner" : new StringDataType(),
+        "rank" : new ObjectDataType("java.util.Boolean"),
+        "use" : new StringDataType()
+    ], 
+    "results" : [ 
+        "idEncounter" : new StringDataType()
+    ], 
+    "displayName" : "putEncounter", 
+    "icon" : "" 
   ]
 ]
