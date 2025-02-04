@@ -1,15 +1,14 @@
 [
   [
-    "name" : "MyTask", 
+    "name" : "getEncoounter", 
     "parameters" : [ 
-        "MyFirstParam" : new StringDataType(), 
-        "MySecondParam" : new StringDataType(), 
-        "MyThirdParam" : new ObjectDataType() 
+        "encounter" : new StringDataType()
     ], 
     "results" : [ 
-        "Result" : new ObjectDataType("java.util.Map") 
+        "idPractitioner" : new StringDataType(),
+        "idPatient" : new StringDataType()
     ], 
-    "displayName" : "My Task", 
+    "displayName" : "getEncounter", 
     "icon" : "" 
   ]
 ]
