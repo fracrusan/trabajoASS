@@ -44,7 +44,8 @@
     "name" : "postEncounter", 
     "parameters" : [ 
         "patient" : new StringDataType(),
-        "partitioner" : new StringDataType()
+        "partitioner" : new StringDataType(),
+        "appointment" : new StringDataType()
     ], 
     "results" : [ 
         "idEncounter" : new StringDataType()
@@ -58,7 +59,8 @@
         "patient" : new StringDataType(),
         "idEncounter" : new StringDataType(),
         "partitioner" : new StringDataType(),
-        "rank" : new Boolean()
+        "rank" : new Boolean(),
+        "use" : new StringDataType()
     ], 
     "results" : [ 
         "idEncounter" : new StringDataType()
